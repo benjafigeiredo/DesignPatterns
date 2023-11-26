@@ -11,6 +11,7 @@ class Logistics(ABC):
     def __init__(self):
         pass
 
+    # Defines a method planDelivery, which creates a Transport and calls the deliver method.
     def planDelivery(self):
         transport: Transport = self.createTransport()
         print(f'making delivery for transport: {transport.getTypeName()}...')
